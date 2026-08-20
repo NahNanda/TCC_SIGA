@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Alerta de Faltas</title>
+<base target="_blank">
+</head>
+<body>
+
+<h2>Sistema de Alerta de Faltas</h2>
+
+<form action="extrair.php" method="POST" enctype="multipart/form-data">
+
+    <p>
+        <label for="limite">Limite de faltas para alerta:</label><br>
+        <input type="number" name="limite_faltas" id="limite" value="10" min="1" max="100" required>
+    </p>
+
+    <p>
+        <label for="arquivo">Selecione o arquivo (PDF ou Excel):</label><br>
+        <input type="file" name="arquivo" id="arquivo" accept=".pdf,.xlsx,.xls" required>
+    </p>
+
+    <p>
+        <button type="submit">Extrair</button>
+    </p>
+
+</form>
+
+</body>
+</html>
